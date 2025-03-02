@@ -25,7 +25,7 @@ return new class extends Migration
             $table->string('background_picture')->default('default.png');
             $table->text('bio')->nullable();
             $table->longText('about_me')->nullable();
-            $table->enum('role', ['admin', 'user'])->default('user');
+            $table->enum('role', ['admin','author', 'user'])->default('user');
             $table->rememberToken();
             $table->timestamps();
         });

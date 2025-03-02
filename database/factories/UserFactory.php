@@ -16,11 +16,6 @@ class UserFactory extends Factory
      */
     protected static ?string $password;
 
-    /**
-     * Define the model's default state.
-     *
-     * @return array<string, mixed>
-     */
     public function definition(): array
     {
         return [
@@ -53,6 +48,13 @@ class UserFactory extends Factory
     {
         return $this->state(fn (array $attributes) => [
             'role' => 'admin',
+        ]);
+    }
+
+    public function author(): static
+    {
+        return $this->state(fn (array $attributes) => [
+            'role' => 'author',
         ]);
     }
 }
