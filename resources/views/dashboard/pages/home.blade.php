@@ -1,4 +1,5 @@
 @extends('dashboard.layouts.master')
+@section('title', 'Home Page')
 @section('content')
 <div class="content-wrap">
     <div class="main">
