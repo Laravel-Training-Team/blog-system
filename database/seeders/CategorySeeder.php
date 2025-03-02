@@ -2,10 +2,8 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Category;
-use App\Models\CategoryImage;
 use Illuminate\Support\Facades\DB;
 
 class CategorySeeder extends Seeder
@@ -16,9 +14,7 @@ class CategorySeeder extends Seeder
     public function run(): void
     {
         //
-
-        Category::query()->delete();
-        DB::statement("ALTER TABLE categories AUTO_INCREMENT = 1"); 
+        Category::truncate();
 
         $categories=[
             ['name'=>'Technology','description'=>'Tech news and articles','image' => 'technology.jpg'],
