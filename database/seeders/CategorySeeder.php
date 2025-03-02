@@ -17,9 +17,6 @@ class CategorySeeder extends Seeder
     {
         //
 
-     
-
-     
         Category::query()->delete();
         DB::statement("ALTER TABLE categories AUTO_INCREMENT = 1"); 
 
@@ -31,7 +28,7 @@ class CategorySeeder extends Seeder
 
         foreach($categories as $categoryData)
         {
-            $category=Category::create($categoryData);
+           Category::create($categoryData);
         }
 
     }
