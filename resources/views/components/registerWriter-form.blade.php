@@ -7,7 +7,7 @@
                         <div class="col-xl-12">
                             <div class="auth-form">
                                 <h4 class="text-center mb-4">Sign up your account</h4>
-                                <form action="/register" method="POST">
+                                <form action="/writerregister" method="POST">
                                     @csrf
                                     <div class="form-group">
                                         <label><strong>Username</strong></label>
@@ -37,7 +37,7 @@
                                     </div>
                                 </form>
                                 <div class="new-account mt-3">
-                                    <p>Already have an account? <a class="text-primary" href="{{route ('login')}}">Sign in</a></p>
+                                    <p>Already have an account? <a class="text-primary" href="{{route ('writerlogin')}}">Sign in</a></p>
                                 </div>
                             </div>
                         </div>

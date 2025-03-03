@@ -7,7 +7,7 @@
                         <div class="col-xl-12">
                             <div class="auth-form">
                                 <h4 class="text-center mb-4">Sign in your account</h4>
-                                <form action="/login" method="POST">
+                                <form action="/writerlogin" method="POST">
                                     @csrf
                                     <div class="form-group">
                                         <label><strong>Email</strong></label>
@@ -33,7 +33,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <a href="{{route('forgetpassword')}}">Forgot Password?</a>
+                                            <a href="{{route('dashforgetpassword')}}">Forgot Password?</a>
                                         </div>
                                     </div>
                                     <div class="text-center">
@@ -41,7 +41,7 @@
                                     </div>
                                 </form>
                                 <div class="new-account mt-3">
-                                    <p>Don't have an account? <a class="text-primary" href="{{route('register')}}">Sign up</a></p>
+                                    <p>Don't have an account? <a class="text-primary" href="{{route('adminregister')}}">Sign up</a></p>
                                 </div>
                             </div>
                         </div>

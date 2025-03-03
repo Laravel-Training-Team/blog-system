@@ -70,6 +70,14 @@
 /*    Brand color
 ----------------------*/
 /*----------------font-------------------*/
+.custom-message {
+  font-size: 0.90rem; 
+  line-height: 1rem;
+  color: #ef4444;
+  font-weight: 600; 
+  margin-top: 0.55rem;
+}
+
 .icon-name {
   color: #000;
 }
