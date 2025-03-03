@@ -20,8 +20,8 @@ class Post extends Model
     /**
      * العلاقة مع الفئة (Category)
      */
-    // public function category()
-    // {
-    //     return $this->belongsTo(Category::class);
-    // }
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
 }
