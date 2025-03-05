@@ -18,20 +18,11 @@ Route::get('/', function () {
 
     Route::post('/dashboardlogout', [SessionDashboardController::class, 'destroy'])->name('dashboard.logout');
 
-    //should be an middleware to this method 
-    Route::get('/adminregister', [RegisteredDashboardController::class, 'createAdmin'])->name('admin.register');
-    Route::post('/adminregister', [RegisteredDashboardController::class, 'storeAdmin']);
-
-    Route::get('/dashboardregister', [RegisteredDashboardController::class, 'create'])->name('writer.register');
-    Route::post('/dashboardregister', [RegisteredDashboardController::class, 'store']);
-
     Route::get('/login', [SessionUserController::class, 'create'])->name('user.login');
     Route::post('/login', [SessionUserController::class, 'store']);
 
     Route::post('/logout', [SessionUserController::class, 'destroy'])->name('user.logout');
 
-    Route::get('/register', [RegisteredUserController::class, 'create'])->name('user.register');
-    Route::post('/register', [RegisteredUserController::class, 'store']);
 
     Route::middleware('auth')->group(function () {
         Route::get('/email/verify', [EmailVerification::class, 'verifyNotice'])
