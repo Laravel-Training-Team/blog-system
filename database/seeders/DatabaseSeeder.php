@@ -22,7 +22,9 @@ class DatabaseSeeder extends Seeder
 
         //when i run db:seed , this will happen
         $this->call([
-            CategorySeeder::class
+            CategorySeeder::class,
+            AdminUserSeeder::class,
+            Role_PermissionSeeder::class,
         ]);
 
 

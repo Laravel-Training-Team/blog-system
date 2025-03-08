@@ -1,3 +1,4 @@
+
 <div class="sidebar sidebar-hide-to-small sidebar-shrink sidebar-gestures">
     <div class="nano">
         <div class="nano-content">
@@ -13,6 +14,16 @@
                         <li><a href="{{ route('index') }}">Dashboard </a></li>
                     </ul>
                 </li>
+
+   
+                <li> <a  class="sidebar-sub-toggle">  <i class="ti-target"></i> Roles <span
+                    class="sidebar-collapse-icon ti-angle-down"></span> </a>
+            <ul>
+                <li><a href="{{ route('roles.index') }}" >  Roles </a></li>
+                <li><a href="{{ route('roles.create') }}" > Create Role </a></li>
+            
+            </ul>
+        </li>
 
                 <li class="label">Apps</li>
                 <li><a class="sidebar-sub-toggle"><i class="ti-target"></i> Pages <span
