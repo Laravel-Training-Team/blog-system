@@ -16,6 +16,7 @@ class AdminUserSeeder extends Seeder
         User::create([
            'first_name' =>'admin',
            'last_name' =>'admin1',
+           'username' => 'admin',
            'date_of_birth'=>'2000-02-25',
            'country' => 'Egypt',
            'address' => 'Cairo',
