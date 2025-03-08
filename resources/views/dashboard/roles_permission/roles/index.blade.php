@@ -31,7 +31,7 @@
                             <td>{{ $role->name }}</td>
                             <td class="text-center">
                                 <div class="d-flex justify-content-center ">
-                                    <a href="{{ route('roles.store') }}" class="btn btn-warning "style="margin-right: 10px;"  >Add | Edit Role Permissions</a>
+                                    <a href="{{ route('roles.add_permission_to_role', $role->id) }}" class="btn btn-warning "style="margin-right: 10px;"  >Add | Edit Role Permissions</a>
                                     <a href="{{ route('roles.edit', $role->id) }}" class="btn btn-primary" style="margin-right: 10px;" > Edit</a>
                                     <form action="{{ route('roles.destroy', $role->id) }}" method="POST" onsubmit="return confirm('Are you sure?')" style="display:inline;">
                                         @method('delete')

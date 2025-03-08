@@ -4,8 +4,10 @@
 @section('content')
 
 <div class="card w-75 "style="margin: 30px 100px 0px 300px" >
-    <div class="card-header">
-        <h4 class="card-title">Create Role</h4>
+    
+    <div class="card-header d-flex justify-content-between align-items-center" >
+        <h3 class="card-title"> Create Role</h3>
+        <a href="{{ route('roles.index') }}" class="btn btn-danger" style="margin-right: 10px;" > back</a>
     </div>
     <div class="card-body ">
         <div class="basic-form ">
