@@ -37,6 +37,7 @@ Route::get('/', function () {
             ->name('verification.send');
     });
 
+    
 Route::get('forgot-password', [UserForgetPasswordController::class, 'showResetForm'])->name('forgetpassword');
 Route::post('forgot-password', [UserForgetPasswordController::class, 'sendResetLinkEmail'])->name('sendemail');
 
