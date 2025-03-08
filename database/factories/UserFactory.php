@@ -21,6 +21,7 @@ class UserFactory extends Factory
         return [
             'first_name' => fake()->firstName(),
             'last_name' => fake()->lastName(),
+            'username' => fake()->userName(),
             'date_of_birth' => fake()->date(),
             'country' => fake()->country(),
             'address' => fake()->address(),
@@ -50,6 +51,7 @@ class UserFactory extends Factory
             'role' => 'admin',
         ]);
     }
+
 
     public function author(): static
     {

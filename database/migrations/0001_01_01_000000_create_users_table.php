@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('first_name');
             $table->string('last_name');
+            $table->string('username');
             $table->date('date_of_birth');
             $table->string('country');
             $table->string('address');
@@ -25,7 +26,7 @@ return new class extends Migration
             $table->string('background_picture')->default('default.png');
             $table->text('bio')->nullable();
             $table->longText('about_me')->nullable();
-            $table->enum('role', ['admin','author', 'user'])->default('user');
+            $table->enum('role', ['admin', 'user','writer'])->default('user');
             $table->rememberToken();
             $table->timestamps();
         });
