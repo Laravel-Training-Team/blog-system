@@ -16,8 +16,6 @@
     </div>
 </div>
 
-
-
 <!-- THEME JAVASCRIPT FILES
 ================================================== -->
 <!-- initialize jQuery Library -->

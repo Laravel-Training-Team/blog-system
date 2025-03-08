@@ -6,7 +6,6 @@
                     <img src="{{ asset('blog-assets/images/logo.jpg') }}" alt="" class="img-fluid">
                 </a>
             </div>
-
             <div class="main-menu">
                 <nav class="navbar navbar-expand-lg p-0">
                     <div class="navbar-collapse collapse" id="navbarsExample09" style="">
@@ -20,7 +19,6 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('category.view') }}">Category</a>
                             </li>
-
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('contact.view') }}">Contact</a>
                             </li>
@@ -28,7 +26,6 @@
                     </div>
                 </nav>
             </div>
-
             <div class="header-social-wrapper">
                 <ul class="list-inline mb-0">
                     <li class="list-inline-item"><a href="#"><i class="ti-facebook"></i></a></li>
@@ -38,9 +35,5 @@
                 </ul>
             </div>
         </div>
-
     </div>
-
-
-
 </div>

@@ -1,8 +1,7 @@
 @extends('blog.layouts.master')
-@section('title', 'Posts Page')
+@section('title', 'Post Page')
 @section('main')
     <div class="content">
-
         <section class="single-block-wrapper section-padding">
             <div class="container">
                 <div class="row">
